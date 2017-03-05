@@ -1,12 +1,108 @@
 body {
   background-image: url("./background-udea.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh;
+  margin: 0;
 }
-div.content {
-  margin: 40px 80px;
+.content {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.contentInt {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
   background-color: white;
-  padding: 30px;
-  opacity: 0.9;
-  border-radius: 10px;
-  color: #4d4d4d;
+  border-radius: 15px;
+  opacity: 0.94;
+  width: 85%;
+  height: 87vh;
+  margin-top: 6.5vh;
+  margin-bottom: 6.5vh;
+  font-family: "Verdana";
+  color: #666666;
+
+}
+.titulo2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 2vh;
+}
+.titulo2 h1 {
+  position: relative;
+  width: 100%;
+  margin-left: 3vw;
+  font-size: 32px;
+}
+h2 {
+  font-size: 20px;
+}
+.parrafo1 {
+  position: relative;
+  width: 100%;
+  margin-left: 3vw;
+  margin-right: 5vw;
+}
+.tabla {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1vh;
+}
+thead {
+  background-color: #53A9AD;
+  color: white;
+  font-size: 12px;
+}
+table, td, tr, th {
+  border: 1px solid #666666;
+  border-collapse: collapse;
+  padding: 6px;
+}
+.parrafo2 {
+  position: relative;
+  width: 100%;
+  margin-left: 3vw;
+  margin-right: 5vw;
+}
+.parrafo1, .tabla, .parrafo2 {
+  font-size: 11px;
+  /*text-align: justify;*/
+}
+ul{
+  list-style-image: url("./iconlist.png");
+}
+li {
+  padding: 4px;
+  margin-left: 2vw;
+}
+#enlace, #enlaceSup {
+  color: #666666;
+  font-weight: bold;
+}
+#piePagina {
+  margin-left: 1vw;
+}
+@media screen and (max-width: 600px) {
+  body {
+    background-size: 140vw 110vh;
+  }
+  section.contentInt {
+    width: 95%;
+    height: 97vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  table {
+    margin: 2vw;
+  }
 }
