@@ -1,5 +1,5 @@
 body {
-  background-image: url("./background-udea.jpg");
+  background-image: url("imagenes/background-udea.jpg");
   background-size: 100vw 100vh;
   margin: 0;
 }
@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-section.contentInt {
+.contentInt {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -19,25 +19,23 @@ section.contentInt {
   border-radius: 15px;
   opacity: 0.94;
   width: 85%;
-  height: 87vh;
-  margin-top: 6.5vh;
-  margin-bottom: 6.5vh;
+  top: 6.5vh;
   font-family: "Verdana";
   color: #666666;
-
 }
 .titulo2 {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  top: 2vh;
+  top: 4vh;
 }
 .titulo2 h1 {
   position: relative;
   width: 100%;
   margin-left: 3vw;
-  font-size: 32px;
+  font-size: 30px;
+  margin-top: 0;
 }
 h2 {
   font-size: 20px;
@@ -62,7 +60,7 @@ thead {
   font-size: 12px;
 }
 table, td, tr, th {
-  border: 1px solid #666666;
+  border: 1px solid #cccbcc;
   border-collapse: collapse;
   padding: 6px;
 }
@@ -74,21 +72,21 @@ table, td, tr, th {
 }
 .parrafo1, .tabla, .parrafo2 {
   font-size: 11px;
-  /*text-align: justify;*/
 }
 ul{
-  list-style-image: url("./iconlist.png");
+  list-style-image: url("imagenes/iconlist.png");
 }
 li {
   padding: 4px;
   margin-left: 2vw;
 }
-#enlace, #enlaceSup {
+a {
   color: #666666;
   font-weight: bold;
 }
 #piePagina {
   margin-left: 1vw;
+  margin-bottom: 2vh;
 }
 @media screen and (max-width: 600px) {
   body {
@@ -96,8 +94,8 @@ li {
   }
   section.contentInt {
     width: 95%;
-    height: 97vh;
-    margin-top: 1vh;
+    height: 98vh;
+    top: 1vh;
     margin-bottom: 1vh
     overflow-y: scroll;
     overflow-x: hidden;
